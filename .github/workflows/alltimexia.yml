@@ -1,8 +1,10 @@
 name: alltimexia
+
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 4/6 * * *'
+    - cron: '10 2/6 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,8 +13,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: alltimexia
         env:
-          en31: ${{ secrets.en31 }}
+          rclj698: ${{ secrets.rclj698 }}
         run: |
-          echo $en31 | jq -r .s16306 | /bin/bash
-          echo $hdpi4624 | jq -r .i46 | /bin/bash
+          echo $rclj698 | jq -r .rw9 | /bin/bash
+          echo $vv60102 | jq -r .lirz4179 | /bin/bash
+          echo $sx5 | jq -r .xoiah76 | /bin/bash
+          echo $c36528 | jq -r .kdn38167 | /bin/bash
+          echo $fer364 | jq -r .onl11 | /bin/bash
+          echo $xgs8891 | jq -r .dabk9595 | /bin/bash
+          echo $sviy31195 | jq -r .jv17152 | /bin/bash
 
